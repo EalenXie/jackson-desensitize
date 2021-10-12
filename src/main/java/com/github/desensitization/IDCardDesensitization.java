@@ -38,10 +38,11 @@ public class IDCardDesensitization implements StringDesensitization {
     private String desensitize(Pattern pattern, String target) {
         if (target != null) {
             Matcher matcher = pattern.matcher(target);
-            int start = 4;
-            int last = target.length() - 4;
             while (matcher.find()) {
-                target = target.replace(target, target.substring(0, start) + Symbol.getSymbol(last, Symbol.STAR) + target.substring(last));
+                String group = matcher.group();
+                int start = 4;
+                int last = group.length() - 4;
+                target = target.replace(target, group.substring(0, start) + Symbol.getSymbol(last, Symbol.STAR) + group.substring(last));
             }
         }
         return target;
