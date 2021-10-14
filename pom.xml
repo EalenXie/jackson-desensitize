@@ -8,6 +8,7 @@
     <artifactId>jackson-desensitize</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <name>jackson-desensitize</name>
     <description>
         A toolkit for handling data desensitization using Jackson serialization
     </description>
