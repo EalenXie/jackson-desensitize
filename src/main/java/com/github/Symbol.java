@@ -16,7 +16,7 @@ public class Symbol {
     }
 
     /**
-     * 获取符号 例如 getSymbol(5,"*") -> *****
+     * 获取符号
      *
      * @param number 符号个数
      * @param symbol 符号
