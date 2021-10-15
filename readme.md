@@ -1,11 +1,21 @@
 基于Jackson序列化实现数据脱敏
 =============
 
-后期会考虑将此项目做成jar包发布到maven中央仓库以便后期使用。
+### 快速开始
 
+1. maven依赖引入
 
+```xml
 
-使用Demo, 直接在想要进行脱敏的对象属性上使用相关注解即可
+<dependency>
+    <groupId>io.github.ealenxie</groupId>
+    <artifactId>jackson-desensitize</artifactId>
+    <version>1.0</version>
+</dependency>
+
+```
+
+2. 直接在想要进行脱敏的对象属性上使用相关注解即可
 
 ```java
 
